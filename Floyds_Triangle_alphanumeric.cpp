@@ -1,0 +1,32 @@
+
+    #include<iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cout << "enter the number of rows := ";
+    cin >> n;
+    int count = 1;
+    char ch = 'A';
+
+    for(int  i = 1;i <= n; i++)
+    {
+        for(int j = 1;j <= i ; j++)
+        {
+            if (j % 2 ==0)
+            {
+                 
+                  cout << ch << " ";
+                ch = ch +2;
+            }
+            else
+            {
+               cout << count << " ";
+                 count = count + 2;
+            }
+        }
+        cout <<endl;
+    }
+    return 0;
+}
